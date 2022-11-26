@@ -46,8 +46,8 @@ public class DefaultController {
 
     @RequestMapping("/deleteEmployee")
     public String deleteEmployee(@RequestParam("empId") int id) {
-        Employee employee = employeeService.getEmployee(id);
-        employeeService.deleteEmployee(employee);
+        Employee employee1 = employeeService.getEmployee(id);
+        employeeService.deleteEmployee(employee1);
         return "redirect:/";
     }
 
